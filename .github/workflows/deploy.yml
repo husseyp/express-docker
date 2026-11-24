@@ -1,9 +1,10 @@
 name: Deploy on VPS
 
 on:
-  push:
-    branches:
-      - master
+  workflow_run:
+  workflows: ["CI"]
+  types:
+    - completed
 
 jobs:
   deploy:
