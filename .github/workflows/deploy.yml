@@ -2,9 +2,9 @@ name: Deploy on VPS
 
 on:
   workflow_run:
-  workflows: ["CI"]
-  types:
-    - completed
+    workflows: ["CI"]
+    types:
+      - completed
 
 jobs:
   deploy:
